@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #515151;
+  height: 450px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.user_message{
+  font-weight: bold;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 960px;
+}
+.input_message{
+  padding-top: 40px;
+  position: relative;
+  font-weight: bold;
+  width: 70%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: #F0F0F0;
+}
+#prompt{
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+button{
+  padding: 10px 40px; 
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  width: 150px;
+  border-radius: 100px;
+  border-style: none !important;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 1px 1px rgba(0,0,0,0.23);
+  transition: all 0.5s ease;
+  
+}
+#reset{
+  background-color: #ED5C39;
+  position: absolute;
+  right:-180px;
+  top: 110px;
+}
+#stop{
+  background-color: #00C28A;
+  position: absolute;
+  right:-180px;
+  top: 50px;
+}
+#input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: blue;
+  height: 100%;
+  opacity: 0;
+}
+#time{
+  position: absolute;
+  top: 0;
+  left:-150px;
+}
+#wpm{
+  position: absolute;
+  top: 50px;
+  left:-150px;
+}
+#errors{
+  position: absolute;
+  top: 0;
+  right:-200px;
+}
+button:hover{
+  transition: all 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+div[contenteditable=true] {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 960px;
+  height: 200px;
+  padding: 5px;
+}
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Words Per Minute Test",
+  "name": "Showcase of React based WPM test",
   "icons": [
     {
       "src": "favicon.ico",
